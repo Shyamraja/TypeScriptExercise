@@ -44,13 +44,8 @@ const BookSearchControl: React.FunctionComponent<BookSearchControlProps> = ({
           <option value="Subject">Subject</option>
       </select>
 
-    {/* <select  value={searchItems} onChange={event => onSearchItemsChange((event.target.value))}>
-          <option value="50">50</option>
-          <option value="75">75</option>
-          <option value="100">100</option>
-      </select> */}
-        <input value={searchItems} type="number" onChange={event => onSearchItemsChange((event.target.value))}></input>  
-        
+      <input value={searchItems} type="number" onChange={event => onSearchItemsChange((event.target.value))}></input>  
+
         <button
           className="text-white font-bold px-8 py-2 bg-gray-700 hover:bg-gray-800 ml-2 focus:outline-none disabled:opacity-50"
           type="submit"
